@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body %}
+       
+        <header class="masthead" style="background-image: url('/static/assets/img/about-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Our Q&A Chatbot</h1>
+                            <span class="subheading">Powered by BERT and Natural Questions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2>Technical Details</h2>
+                        <p>Our question-answering chatbot was developed using:</p>
+                        <ul>
+                            <li><strong>Model:</strong> deepset/bert-base-cased-squad2</li>
+                            <li><strong>Training Data:</strong> Natural Questions Short dataset</li>
+                            <li><strong>Performance Metrics:</strong>
+                                <ul>
+                                    <li>F1 Score: 80.11%</li>
+                                    <li>Precision: 77.50%</li>
+                                    <li>Recall: 88.57%</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>How It Works</h2>
+                        <p>The system uses a fine-tuned BERT model to understand questions and find accurate answers within the provided context. The model was specifically trained on question-answer pairs to excel at extractive QA tasks.</p>
+
+                        <h2>Development Team</h2>
+                        <p>This project was created by:</p>
+                        <ul>
+                            <li>Rahma Ebrahim</li>
+                            <li>Poussy Ayman</li>
+                            <li>Rahma Ebrahim</li>
+                        </ul>
+
+                        <h2>Technology Stack</h2>
+                        <p>The backend is built with Flask framework, using PyTorch for the machine learning components and Hugging Face's Transformers library for the BERT implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}
